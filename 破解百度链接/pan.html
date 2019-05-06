@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Cache-Control" content="max-age=30"/>
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="format-detection" content="email=no">
+<meta name="baidu-tc-verification" content="b31ebb7c3759312418b3645de4991aef"/>
+<meta name="keywords" content=""/>
+<meta name="description" content=""/>
+<title>
+请输入提取码_百度网盘</title>
+<link rel="shortcut icon" href="/h5-static/h5-base/images/favicon.ico" type="images/x-icon"/>
+<script src="//m.baidu.com/static/searchbox/openjs/aio.js?v=201502"></script>
+
+<script type="text/javascript" id="platform">
+        (function() {
+            var platformJs = document.getElementById('platform');
+            var url = window.location.href;
+            var reg1 = /wap\/link\?surl=([^\&]+)(&(.*))*/i;
+            var reg2 = /wap\/link/i;
+            var reg3 = /wap\/home/i;
+            var reg4 = /wap\/view/i;
+            var reg5 = /wap\/shareview/i;
+            var adaptReg = /(.*)(\?|\&)adapt=([^\&\#]*)(.*)/;
+            var jumptourl = '';
+
+            var addParameterToUrl = function(url) {
+                var indexOf = url.indexOf('#');
+                if (url.indexOf('?') > -1) {
+                    addParams = '&adapt=pc&fr=ftw';
+                } else {
+                    addParams = '?adapt=pc&fr=ftw';
+                }
+
+                if (indexOf > -1) {
+                    url = url.slice(0, indexOf) + addParams + url.slice(indexOf);
+                } else {
+                    url += addParams;
+                }
+                return url;
+            };
+
+            if (navigator.platform.match(/win32|mac/i)) {
+                var hasAdapt;
+                var isMatched = true;
+                // 有adapt参数，但不等于pc，修正为pc
+                if (url.match(adaptReg) && !(/adapt\=pc/i.test(url))) {
+                    url = url.replace(adaptReg, '$1$2adapt=pc$4');
+                }
+                // 没有则添加adapt=pc , 对于adapt=pc的不跳转
+                else if (!(/adapt/i.test(url))) {
+                    url = addParameterToUrl(url);
+                }
+                // 有adapt=pc
+                else if ((/adapt\=pc/i.test(url))) {
+                    hasAdapt = true;
+                }
+
+                // 判断是否匹配路由跳转规则
+                if (url.match(reg1)) {
+                    jumptourl = url.replace(reg1, 's/$1?$3');
+                } else if (url.match(reg2)) {
+                    jumptourl = url.replace(reg2, 'share/link');
+                } else if (url.match(reg3)) {
+                    jumptourl = url.replace(reg3, 'disk/home');
+                } else if (url.match(reg4)) {
+                    jumptourl = location.protocol + '//' + location.host + '/disk/home?adapt=pc&fr=ftw';
+                } else if (url.match(reg5)) {
+                    // var shareid = url.match(/(?=.*?shareid=([^\&\#]*)(\&|$))/i)[1];
+                    // var uk = url.match(/(?=.*?uk=([^\&\#]*)(\&|$))/i)[1];
+                    // jumptourl = location.protocol + '//' + location.host + '/share/link?shareid=' + shareid + '&uk=' + uk + '&adapt=pc&fr=ftw';
+                    // 下掉上面的shareid＋uk的方式，改为拼成web的外链/s/1xxxx
+                    var externalSymbol = location.search.length === 0 ? '?' : '';
+                    var surl = url.match(/(?=.*?surl=([^\&\#]*)(\&|$))/i)[1];
+                    jumptourl = location.protocol + '//' + location.host + '/s/' + surl + location.search + externalSymbol + '&adapt=pc&fr=ftw';
+                } else {
+                    jumptourl = url;
+                    isMatched = false;
+                }
+
+                // 有adapt＝pc的并且没有匹配到路由跳转规则的不用跳转
+                if (hasAdapt && !isMatched) {
+                    jumptourl = '';
+                }
+                setTimeout(function() {
+                    if (jumptourl) {
+                        window.location.href = jumptourl;
+                    }
+                }, 100);
+            }
+            platformJs.parentNode.removeChild(platformJs);
+        })();
+        </script>
+<script>
+        window.yunData = {"mobileModel":"Android","loginstate":0,"uinfo":{"uname":"\u6770\u4ed4**\u65f6\u4ee3","avatar_url":"https:\/\/ss0.bdstatic.com\/7Ls0a8Sm1A5BphGlnYG\/sys\/portrait\/item\/96630035.jpg","uk":1664211167,"third":0},"third":0,"bdstoken":null,"flag":2,"photo":"","urlparam":[],"XDUSS":"null"};
+    </script>
+
+
+
+
+<link rel="stylesheet" type="text/css" href="/sns/h5-static/h5-base/pkg/all_5f27e13.css"/><link rel="stylesheet" type="text/css" href="/sns/h5-static/h5-common/pkg/widget_676e7f9.css"/><link rel="stylesheet" type="text/css" href="/sns/h5-static/h5-base/pkg/widget_81af446.css"/><link rel="stylesheet" type="text/css" href="/sns/h5-static/h5-share/pkg/widget_168d5ab.css"/></head>
+<body>
+
+<header class="header" id="header">
+<div>
+<h1 class="logo" id="logo">
+<a href="/wap/home">
+<img src="/sns/h5-static/h5-common/widget/header/img/logo_3d074ed.png" alt="百度网盘" />
+</a>
+</h1>
+</div>
+</header><img src="/sns/h5-static/h5-share/widget/getshare/img/shareImg_a858896.jpg" alt="自由存，随心享" />
+<div class="getshare">
+<h2><span class="avator"><img src="https://ss0.bdstatic.com/7Ls0a8Sm1A5BphGlnYG/sys/portrait/item/96630035.jpg" alt=""/></span><span class="mr5">杰仔**时代</span>给您分享了文件</h2>
+<form class="access-form" id="accessForm" name="accessForm" onsubmit="return false">
+<div class="access-top-bg"></div>
+<div class="access-box">
+<label for="accessCode">请输入提取码：</label>
+<input type="text" id="accessCode" name="accessCode" class="access-code" x-webkit-speech />
+<a href="javascript:;" class="btn blue-btn" id="getfileBtn">提取文件</a>
+<div id="accessCodeTip" class="tips"></div>
+<div id="verifyBox" class="dn">
+<label for="verifyCode">验证码：</label>
+<input type="text" id="verifyCode" name="verifyCode" class="verify-code" />
+<img id="verifyImg" alt="验证码获取中" />
+<span id="getVerify" style="color:#0063cf;margin-left:5px;">看不清？</span>
+<div id="verifyCodeTip" class="tips"></div>
+</div>
+</div>
+</form>
+</div>
+<div class="dn">
+<script type="text/javascript">
+        var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+        document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fe6c5e9705447b840241ebab6dbdb5fda' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+<script>
+        var getQueryString= function (name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+            var r = window.location.search.substr(1).match(reg);
+            if (r != null)
+                return decodeURIComponent(r[2]);
+            return null;
+        };
+        // 给手百入口的统计
+        if (getQueryString('from') === 'baiduboxappenter') {
+            var _hmt = _hmt || [];
+            (function() {
+              var hm = document.createElement("script");
+              hm.src = "https://hm.baidu.com/hm.js?026a79fd46d0c3383e742930256f4472";
+              var s = document.getElementsByTagName("script")[0]; 
+              s.parentNode.insertBefore(hm, s);
+            })();
+        }
+</script>
+</div>
+<img style="position:absolute;top:-10px;left:-10px;width:1px;height:1px;display:none;" src="//pcs.baidu.com/rest/2.0/pcs/file?method=plantcookie&type=ett" />
+<img style="position:absolute;top:-10px;left:-10px;width:1px;height:1px;display:none;" src="//pcs.baidu.com/rest/2.0/pcs/file?method=plantcookie&type=stoken&source=pcs" />
+<img style="position:absolute;top:-10px;left:-10px;width:1px;height:1px;display:none;" src="//pcsdata.baidu.com/rest/2.0/pcs/file?method=plantcookie&type=stoken&source=pcsdata" />
+</body><script type="text/javascript" src="/sns/h5-static/h5-base/pkg/all_da9d453.js"></script>
+<script type="text/javascript" src="/sns/h5-static/h5-base/js/log_c969089.js"></script>
+<script type="text/javascript" src="/sns/h5-static/h5-common/js/log_c969089.js"></script>
+<script type="text/javascript" src="/sns/h5-static/h5-common/js/realnamewidget_08222df.js"></script>
+<script type="text/javascript" src="/sns/h5-static/h5-share/pkg/all_44397ee.js"></script>
+<script type="text/javascript" src="/sns/h5-static/h5-common/pkg/widget_59c7b54.js"></script>
+<script type="text/javascript" src="/sns/h5-static/h5-base/pkg/widget_688857e.js"></script>
+<script type="text/javascript" src="/sns/h5-static/h5-share/pkg/widget_c0f1bd1.js"></script>
+<script type="text/javascript" src="/sns/h5-static/h5-base/js/boot_5f3198f.js"></script>
+<script type="text/javascript">!function(){        require("h5-base:widget/log/log.js");
+    }();
+!function(){    require('h5-share:widget/getshare/getshare.js');
+}();
+!function(){        require("h5-base:widget/libs/onload.js");
+        require("h5-base:widget/libs/detect.js");
+    }();</script></html>
